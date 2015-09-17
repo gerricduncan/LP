@@ -18,9 +18,12 @@ bool lp::validForm() const{
     return true;
 }
 
-void lp::parseConstraint(std::string s){
+void lp::parseLine(std::string s){
     s.erase(remove_if(s.begin(), s.end(), isspace), s.end());
     for (unsigned int i = 0; i < s.size(); i++) {
+        if (isalpha(s[i])) {
+            <#statements#>
+        }
         switch (isalpha(s[i])) {
             case <#constant#>:
                 <#statements#>
