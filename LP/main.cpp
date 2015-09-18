@@ -9,15 +9,20 @@
 #include <iostream>
 #include "lp.h"
 
+// Comparison operator for unrestricted is !!
 int main(int argc, const char * argv[]) {
     lp orig;
+
     orig.min = false;
     orig.c = {2,-1,3};
-    orig.constraints = {
-        {{1,-1,4,},"<=",8},
-        {2,2,-5},{1,0,1},{1,0,0},{0,0,1},{0,1,0}};
-    orig.b = {8,4,6,0,0,0};
-    orig.comp = {"<=","=",">=",">=",">="," unrestricted"};
+    constraint c1 = {{1,-1,4},"<=",8};
+    constraint c2 = {{2,2,-5},"=",4};
+    constraint c3 = {{1,0,1},">=",6};
+    constraint c4 = {{1,0,0},">=",0};
+    constraint c5 = {{0,0,1},">=",0};
+    constraint c6 = {{0,1,0},"!!",0};
+    
+    orig.constraints = {c1,c2,c3,c4,c5,c6};
     
     if (orig.validForm())
         orig.print();

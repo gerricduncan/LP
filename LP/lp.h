@@ -16,7 +16,7 @@
 #include <string>
 
 struct constraint{
-    std::vector<double> a; //Coefficients
+    std::vector<short int> a; //Coefficients
     std::string comp; // Comparison operator
     double b; // Limit
 };
@@ -24,12 +24,12 @@ struct constraint{
 class lp{
 public:
     bool min; // Minimize = 1, maximize = 0;
-    std::vector<double> c; // Costs
+    std::vector<short int> c; // Costs
     std::vector<constraint> constraints; // Constraints
     bool validForm() const;
     void print();
 private:
-    std::string vecLine(std::vector<double>&);
+    std::string vecLine(std::vector<short int>&);
 };
 
 
