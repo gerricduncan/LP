@@ -30,7 +30,7 @@
 		29C7622F1BAB0AF300AE1181 /* lp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lp.cpp; sourceTree = "<group>"; };
 		29C762301BAB0AF300AE1181 /* lp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lp.h; sourceTree = "<group>"; };
 		29C762321BAC60B900AE1181 /* temp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = temp.cpp; sourceTree = "<group>"; };
-		29C762351BAC6F3600AE1181 /* LP Definitions Algorithms.docx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LP Definitions Algorithms.docx"; path = "../../../../Documents/LP/LP Definitions Algorithms.docx"; sourceTree = "<group>"; };
+		29C762361BAC71BA00AE1181 /* LP Definitions Algorithms.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LP Definitions Algorithms.docx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +63,9 @@
 		29C762271BAB0A6300AE1181 /* LP */ = {
 			isa = PBXGroup;
 			children = (
+				29C762361BAC71BA00AE1181 /* LP Definitions Algorithms.docx */,
 				29C762281BAB0A6300AE1181 /* main.cpp */,
 				29C7622F1BAB0AF300AE1181 /* lp.cpp */,
-				29C762351BAC6F3600AE1181 /* LP Definitions Algorithms.docx */,
 				29C762321BAC60B900AE1181 /* temp.cpp */,
 				29C762301BAB0AF300AE1181 /* lp.h */,
 			);
